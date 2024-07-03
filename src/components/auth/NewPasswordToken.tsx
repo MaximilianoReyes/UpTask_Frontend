@@ -3,7 +3,6 @@ import { PinInput, PinInputField } from '@chakra-ui/pin-input';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@tanstack/react-query';
 import { validateToken } from '@/api/AuthAPI';
-import { error } from 'console';
 import { toast } from 'react-toastify';
 
 type NewPasswordTokenProps = {
