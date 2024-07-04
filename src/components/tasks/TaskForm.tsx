@@ -7,7 +7,7 @@ type TaskFormProps = {
     register: UseFormRegister<TaskFormData>
 }
 
-export default function TaskForm({errors, register} : TaskFormProps) {
+export default function TaskForm({errors, register} : TaskFormProps) {          
     return (
         <>
             <div className="flex flex-col gap-5">
@@ -58,7 +58,7 @@ export default function TaskForm({errors, register} : TaskFormProps) {
                     placeholder="Fecha limite de la tarea"
                     className="w-full p-3  border-gray-300 border"
                     {...register("date", {
-                        required: "La fecha limite de la tarea es oblugatioria"
+                        required: "La fecha limite de la tarea es obligatioria"
                     })}
                 />
                 {errors.date && (

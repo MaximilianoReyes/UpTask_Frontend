@@ -23,7 +23,8 @@ export default function EditTaskModal({data, taskId} : EditTaskModalProps) {
 
     const { register, handleSubmit, reset, formState: {errors} } = useForm<TaskFormData>({defaultValues : {
         name: data.name,
-        description: data.description
+        description: data.description,
+        date: data.date
     }})
 
     const queryClient = useQueryClient()
