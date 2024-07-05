@@ -33,7 +33,7 @@ export default function AddMemberForm() {
         <>
 
             <form
-                className="mt-10 space-y-5"
+                className="mt-10 space-y-8"
                 onSubmit={handleSubmit(handleSearchUser)}
                 noValidate
             >
@@ -63,7 +63,7 @@ export default function AddMemberForm() {
 
                 <input
                     type="submit"
-                    className=" bg-fuchsia-600 hover:bg-fuchsia-700 w-full p-3  text-white font-black  text-xl cursor-pointer"
+                    className=" bg-sky-500 hover:bg-sky-600  w-full p-3  text-white font-black  text-xl cursor-pointer"
                     value='Buscar Usuario'
                 />
             </form>

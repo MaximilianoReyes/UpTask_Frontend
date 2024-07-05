@@ -35,9 +35,9 @@ export default function DashboardView() {
         <h1 className="text-5xl font-black">Mis Proyectos</h1>
         <p className="text-2xl font-light text-gray-500 mt-5">Maneja y administra tus proyectos</p>
 
-        <nav className='my-5'>
+        <nav className='my-8'>
           <Link
-            className='bg-purple-400 hover:bg-purple-500 px-10 py-3 text-white text-xl font-bold cursor-pointer transition-colors'
+            className='bg-sky-500 hover:bg-sky-600 w-full p-3 px-10 py-3 text-white text-xl font-bold cursor-pointer transition-colors'
             to='/projects/create'
           >Nuevo Proyecto</Link>
         </nav>
@@ -82,7 +82,7 @@ export default function DashboardView() {
                                 >
                                         <Menu.Item>
                                             <Link to={`/projects/${project._id}`}
-                                                className='block px-3 py-1 text-sm leading-6 text-gray-900'>
+                                                className='block px-3 py-1 text-sm leading-6 text-gray-900 hover:bg-gray-200 cursor-pointer'>
                                             Ver Proyecto
                                             </Link>
                                         </Menu.Item>
@@ -92,14 +92,14 @@ export default function DashboardView() {
                                           <>
                                             <Menu.Item>
                                               <Link to={`/projects/${project._id}/edit`}
-                                                  className='block px-3 py-1 text-sm leading-6 text-gray-900'>
+                                                  className='block px-3 py-1 text-sm leading-6 text-gray-900 hover:bg-gray-200 cursor-pointer'>
                                               Editar Proyecto
                                               </Link>
                                             </Menu.Item>
                                             <Menu.Item>
                                               <button 
                                                   type='button' 
-                                                  className='block px-3 py-1 text-sm leading-6 text-red-500'
+                                                  className='block w-full px-3 py-1 text-sm leading-6 text-red-500 hover:bg-gray-200 cursor-pointer text-left'
                                                   onClick={() => mutate(project._id) }
                                               >
                                                   Eliminar Proyecto
@@ -120,7 +120,7 @@ export default function DashboardView() {
           <p className=' text-center py-20 '>No hay {''}
             <Link
               to='/projects/create'
-              className=' text-fuchsia-500 font-bold '
+              className=' text-sky-400 font-bold '
             >Crear Proyecto</Link>
           </p>
         )}

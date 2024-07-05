@@ -57,7 +57,7 @@ export default function TaskCard({ task, canEdit } : TaskCardProps) {
                         <Menu.Item>
                             <button 
                                 type='button' 
-                                className='block px-3 py-1 text-sm leading-6 text-gray-900'
+                                className='block w-full text-left px-3 py-1 text-sm leading-6 text-gray-900 hover:bg-gray-200 cursor-pointer'
                                 onClick={() => navigate(location.pathname + `?viewTask=${task._id}`)}
                             >
                                 Ver Tarea
@@ -69,7 +69,7 @@ export default function TaskCard({ task, canEdit } : TaskCardProps) {
                                 <Menu.Item>
                                     <button 
                                         type='button' 
-                                        className='block px-3 py-1 text-sm leading-6 text-gray-900'
+                                        className='block w-full text-left px-3 py-1 text-sm leading-6 text-gray-900 hover:bg-gray-200 cursor-pointer'
                                         onClick={() => navigate(location.pathname + `?editTask=${task._id}`)}
                                     >
                                         Editar Tarea
@@ -79,7 +79,7 @@ export default function TaskCard({ task, canEdit } : TaskCardProps) {
                                 <Menu.Item>
                                     <button 
                                         type='button' 
-                                        className='block px-3 py-1 text-sm leading-6 text-red-500'
+                                        className='block w-full text-left px-3 py-1 text-sm leading-6 text-red-500 hover:bg-gray-200 cursor-pointer'
                                         onClick={() => mutate({projectId, taskId: task._id})}
                                     >
                                         Eliminar Tarea

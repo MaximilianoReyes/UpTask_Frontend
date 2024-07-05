@@ -86,10 +86,10 @@ export default function AddTaskModal() {
                                         Nueva Tarea
                                     </Dialog.Title>
 
-                                    <p className="text-xl font-bold">Llena el formulario y crea una tarea</p>
+                                    <p className="text-xl font-bold">Llena el formulario para agregar una nueva tarea al tablero</p>
 
                                     <form
-                                        className='mt-10 space-y-3'
+                                        className='mt-10 space-y-8'
                                         onSubmit={handleSubmit(handleCreateTask)}
                                         noValidate
                                     >
@@ -100,7 +100,7 @@ export default function AddTaskModal() {
 
                                         <input 
                                             type='submit'
-                                            className=' bg-fuchsia-600 hover:bg-fuchsia-700 w-full p-3 text-white uppercase font-bold cursor-pointer transition-colors '
+                                            className=' bg-sky-500 hover:bg-sky-600 w-full p-3 text-white uppercase font-bold cursor-pointer transition-colors '
                                             value='Guardar Tarea'
                                         />
                                     </form>

@@ -38,7 +38,7 @@ export default function RegisterView() {
       <h1 className="text-5xl font-black text-white">Crear Cuenta</h1>
       <p className="text-2xl font-light text-white mt-5">
         Llena el formulario para {''}
-        <span className=" text-fuchsia-500 font-bold"> crear tu cuenta</span>
+        <span className=" text-sky-400 font-bold"> crear tu cuenta</span>
       </p>
 
       <form
@@ -132,7 +132,7 @@ export default function RegisterView() {
         <input
           type="submit"
           value='Registrarme'
-          className="bg-fuchsia-600 hover:bg-fuchsia-700 w-full p-3  text-white font-black  text-xl cursor-pointer"
+          className="bg-sky-500 hover:bg-sky-600 w-full p-3  text-white font-black  text-xl cursor-pointer"
         />
       </form>
 

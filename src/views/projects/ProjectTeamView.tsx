@@ -42,17 +42,17 @@ export default function ProjectTeamView() {
                 <nav className="my-5 flex gap-3">
                     <button
                         type="button"
-                        className="bg-purple-400 hover:bg-purple-500 px-10 py-3 text-white text-xl font-bold cursor-pointer transition-colors"
+                        className="bg-sky-400 hover:bg-sky-500  px-10 py-3 text-white text-xl font-bold cursor-pointer transition-colors"
                         onClick={() => navigate(location.pathname + "?addMember=true")}
                     >Agregar Colaborador</button>
 
                     <Link
                         to={`/projects/${projectId}`}
-                        className="bg-fuchsia-600 hover:bg-purple-700 px-10 py-3 text-white text-xl font-bold cursor-pointer transition-colors"
+                        className="bg-sky-600 hover:bg-sky-700  px-10 py-3 text-white text-xl font-bold cursor-pointer transition-colors"
                     >Volver al Proyecto</Link>
                 </nav>
 
-                <h2 className="text-5xl font-black my-10">Miembros actuales</h2>
+                <h2 className="text-5xl font-black my-10">Miembros actuales del equipo</h2>
             {data.length ? (
                 <ul role="list" className="divide-y divide-gray-100 border border-gray-100 mt-10 bg-white shadow-lg">
                     {data?.map((member) => (
@@ -86,7 +86,7 @@ export default function ProjectTeamView() {
                                             <Menu.Item>
                                                 <button
                                                     type='button'
-                                                    className='block px-3 py-1 text-sm leading-6 text-red-500'
+                                                    className='block w-full text-left px-3 py-1 text-sm leading-6 text-red-500 hover:bg-gray-200 cursor-pointer'
                                                     onClick={() => mutate({projectId, userId: member._id})}
                                                 >
                                                     Eliminar del Proyecto
